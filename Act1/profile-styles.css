@@ -1,0 +1,133 @@
+/* Profile specific styles */
+.profile-content {
+    background-color: black !important;
+    color: lavender;
+    border-radius: 10px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    padding: 30px;
+    border-bottom: 4px solid yellow;
+    margin: -40px -40px 30px -40px;
+    border-radius: 10px 10px 0 0;
+}
+ 
+.cat {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.profile-header h1 {
+    color: yellow;
+    margin: 0;
+    font-family: 'Fantasy', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.profile-header h4 {
+    color: rgb(247, 247, 247);
+    margin-top: 10px;
+    font-family: "Garamond", serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.quote-section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.quote-section h2 {
+    color: yellow;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.quote-section h3 {
+    color: lavender;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.hobbies {
+    border: 2px solid yellow;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #222;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(255, 255, 0, 0.3);
+}
+
+.hobbies h2 {
+    color: yellow;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.hobbies ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    text-align: left;
+    display: inline-block;
+    color: lavender;
+    font-size: 1.1em;
+}
+
+.hobbies li {
+    margin-bottom: 8px;
+}
+
+.hobbies p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: lavender;
+}
+
+.hobbies a {
+    color: yellow;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hobbies a:hover {
+    color: #ffff99;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for profile */
+@media (max-width: 768px) {
+    .profile-header {
+        margin: -20px -20px 20px -20px;
+        padding: 20px;
+    }
+    
+    .profile-header h1 {
+        font-size: 28px;
+    }
+    
+    .profile-header h4 {
+        font-size: 20px;
+    }
+    
+    .cat {
+        height: 80px;
+    }
+    
+    .hobbies {
+        width: 95%;
+        margin: 20px auto;
+    }
+}

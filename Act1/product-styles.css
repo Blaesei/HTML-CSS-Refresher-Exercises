@@ -1,0 +1,113 @@
+/* Product card specific styles */
+.product-main {
+    background: #f8f5f2 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.product-showcase {
+    text-align: center;
+    width: 100%;
+}
+
+.product-showcase h1 {
+    color: #8b4513;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.1);
+    max-width: 320px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #e8d9c9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(139, 69, 19, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    background: #e8d9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-content {
+    padding: 22px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #8b4513;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.product-description {
+    color: #a0522d;
+    line-height: 1.6;
+    margin-bottom: 22px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #a0522d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #a0522d;
+    box-sizing: border-box;
+}
+
+.buy-button:hover {
+    background-color: white;
+    color: #a0522d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(160, 82, 45, 0.3);
+}
+
+/* Responsive design for product */
+@media (max-width: 768px) {
+    .product-main {
+        padding: 20px;
+    }
+    
+    .product-showcase h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    .product-card {
+        max-width: 100%;
+    }
+}
